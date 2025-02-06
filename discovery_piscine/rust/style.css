@@ -1,12 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Common hidden state */
+.slide-left, .slide-right {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Slide from left */
+.slide-left {
+    transform: translateX(-50px);
+}
+
+.slide-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide from right */
+.slide-right {
+    transform: translateX(50px);
+}
+
+.slide-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 body,html{
-    background-color: #333;
+    background-color: #161616;
     height: 2000px;
     color: white;
 }
@@ -21,7 +63,7 @@ hr{
 @media screen and (min-width: 1024px) {
     .container {
         margin: 100px auto; /* กึ่งกลางจอ */
-        width: 80%;
+        width: 70%;
     }
 }
 
