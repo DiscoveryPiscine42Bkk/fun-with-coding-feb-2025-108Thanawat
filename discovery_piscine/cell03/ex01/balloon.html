@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explode the Balloon</title>
+    <title>Balloon</title>
     <style>
         body {
             display: flex;
@@ -42,7 +42,7 @@
         let colorIndex = 0;
 
         balloon.addEventListener("click", (event) => {
-            event.stopPropagation(); // ป้องกัน event bubbling
+            event.stopPropagation();
             size += 10;
             if (size > maxSize) {
                 size = minSize; // Reset ถ้าเกินขนาดสูงสุด
