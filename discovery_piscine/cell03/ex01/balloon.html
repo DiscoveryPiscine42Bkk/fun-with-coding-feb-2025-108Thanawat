@@ -11,6 +11,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
+            position: relative;
         }
         #balloon {
             width: 200px;
@@ -25,6 +26,7 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
+            position: absolute;
         }
     </style>
 </head>
@@ -39,20 +41,22 @@
         const colors = ["red", "green", "blue"];
         let colorIndex = 0;
 
-        balloon.addEventListener("click", () => {
+        balloon.addEventListener("click", (event) => {
+            event.stopPropagation(); // ป้องกัน event bubbling
             size += 10;
             if (size > maxSize) {
-                size = minSize; // Reset if it exceeds max size
-                colorIndex = 0; // Reset color
+                size = minSize; // Reset ถ้าเกินขนาดสูงสุด
+                colorIndex = 0; // Reset สี
             } else {
                 colorIndex = (colorIndex + 1) % colors.length;
             }
             updateBalloon();
         });
 
-        balloon.addEventListener("mouseleave", () => {
-            if (size > minSize) {
-                size -= 5;
+        document.body.addEventListener("click", (event) => {
+            if (!balloon.contains(event.target) && size > minSize) {
+                size -= 10;
+                if (size < minSize) size = minSize;
                 colorIndex = (colorIndex - 1 + colors.length) % colors.length;
                 updateBalloon();
             }
