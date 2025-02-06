@@ -53,9 +53,9 @@
             updateBalloon();
         });
 
-        document.body.addEventListener("click", (event) => {
+        document.body.addEventListener("mouseleave", (event) => {
             if (!balloon.contains(event.target) && size > minSize) {
-                size -= 10;
+                size -= 5;
                 if (size < minSize) size = minSize;
                 colorIndex = (colorIndex - 1 + colors.length) % colors.length;
                 updateBalloon();
