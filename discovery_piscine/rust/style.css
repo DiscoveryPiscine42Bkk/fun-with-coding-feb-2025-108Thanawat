@@ -7,8 +7,15 @@
 }
 body,html{
     background-color: #333;
+    height: 2000px;
+    color: white;
 }
-
+hr{
+    height: 2px;
+    background-color: #5a5a5a;
+    border: none;
+    margin: 30px 0;
+}
 
 /* สำหรับหน้าจอ Desktop (ตั้งแต่ 1024px ขึ้นไป) */
 @media screen and (min-width: 1024px) {
@@ -24,6 +31,7 @@ body,html{
         margin: 80px 40px;
         width: 90%;
     }
+
 }
 
 /* สำหรับหน้าจอ Mobile (ต่ำกว่า 768px) */
@@ -40,4 +48,5 @@ body,html{
         margin: 30px 10px;
         width: 100%;
     }
+
 }

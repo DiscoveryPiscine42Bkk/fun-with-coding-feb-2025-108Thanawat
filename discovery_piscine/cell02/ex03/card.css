@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .container{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -37,6 +38,15 @@ button {
     width: 100%;
     padding: 8px;
     background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(70, 70, 70);
     color: white;
     font-size: 18px;
     border: none;

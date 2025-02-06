@@ -1,0 +1,43 @@
+
+
+
+/* สำหรับหน้าจอ Desktop (ตั้งแต่ 1024px ขึ้นไป) */
+@media screen and (min-width: 1024px) {
+    .project-items{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .item{
+        width: 45%;
+        height: 500px;
+        background-color: rgb(65, 65, 65);
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .img-project{
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+    .img-project img{
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+/* สำหรับหน้าจอ Tablet (iPad, ขนาด 768px - 1023px) */
+@media screen and (max-width: 1023px) {
+
+}
+
+/* สำหรับหน้าจอ Mobile (ต่ำกว่า 768px) */
+@media screen and (max-width: 768px) {
+
+}
+
+/* สำหรับหน้าจอมือถือขนาดเล็ก (ต่ำกว่า 480px) */
+@media screen and (max-width: 480px) {
+
+}
