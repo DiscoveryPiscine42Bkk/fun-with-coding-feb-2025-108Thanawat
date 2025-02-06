@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="skill.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="carousel.css">
 </head>
 <body>
 
@@ -45,6 +46,21 @@
         </ul>
     </nav>
     <div class="container">
+        <div class="carousel">
+            <div class="carousel-track">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+                <img src="https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg" class="carousel-slide">
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
         <div id="skill" class="skill slide-left">
             <h1>SKILL</h1>
             <div class="skill-items">
@@ -206,7 +222,7 @@
 
     </div>
 
-
+    <script src="carousel.js"></script>
     <script src="fade.js"></script>
 </body>
 </html>
