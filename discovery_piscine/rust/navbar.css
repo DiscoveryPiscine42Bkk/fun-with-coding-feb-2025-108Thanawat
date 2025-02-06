@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+    padding: 10px 20px;
+    height: 80px;
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    
+}

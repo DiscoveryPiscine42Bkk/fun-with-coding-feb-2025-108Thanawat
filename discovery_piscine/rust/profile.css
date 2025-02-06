@@ -1,0 +1,16 @@
+
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+.profile-content{
+    width: 500px;
+}
+.profile-content div{
+    margin-top: 50px;
+}
+hr{
+    margin: 20px 0;
+}

@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+}
+.cell1{
+    width: 50%; 
+    height: 100px;
+    background-color: rgb(255, 122, 122);
+    position: relative;
+}
+.cell2{
+    width: 50%; 
+    height: 100px;
+    background-color: rgb(135, 255, 239);
+    position: relative;
+}
+
+p{
+    position: absolute; top: 25px; left: 20px;
+}
