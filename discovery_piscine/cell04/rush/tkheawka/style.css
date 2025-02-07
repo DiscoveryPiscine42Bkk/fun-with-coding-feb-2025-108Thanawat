@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-.fade-in {
+/* .fade-in {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -10,13 +10,13 @@
     transform: translateY(0);
 }
 
-/* Common hidden state */
+
 .slide-left, .slide-right {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Slide from left */
+
 .slide-left {
     transform: translateX(-50px);
 }
@@ -26,7 +26,7 @@
     transform: translateX(0);
 }
 
-/* Slide from right */
+
 .slide-right {
     transform: translateX(50px);
 }
@@ -34,7 +34,7 @@
 .slide-right.show {
     opacity: 1;
     transform: translateX(0);
-}
+} */
 
 
 *{
@@ -86,9 +86,6 @@ hr{
 
 /* สำหรับหน้าจอมือถือขนาดเล็ก (ต่ำกว่า 480px) */
 @media screen and (max-width: 480px) {
-    .container {
-        margin: 30px 10px;
-        width: 100%;
-    }
+
 
 }
